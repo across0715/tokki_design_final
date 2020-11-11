@@ -1,0 +1,119 @@
+body {
+  background-image: url("../tkimg/background01.jpg");
+  margin: 0;
+  /* background-color: rgb(250, 222, 227); */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+}
+
+a{  
+  text-decoration: none;
+ color: white; 
+ 
+}
+
+.navbar {
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+} 
+
+.navbar__logo {
+  font-size: 24px;
+  color:silver;
+}
+
+.navbar__logo i {
+  color: orangered;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+} 
+
+.navbar__menu li{
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+  
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+@media  screen and (max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu  {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  } 
+  .navbar__menu li {
+   width: 100%;
+   text-align: center;
+  }
+
+  .navbar__icons  {
+    justify-content: center;
+    width: 100%;
+  }
+}
+/* ===============메인 콘텐트 =================================
+================================================*/
+
+.main {
+  display:flex;
+}
+
+.left {
+  background-color: none; 
+  width: 750px;
+  height: 700px;
+  margin: 30px;
+} 
+
+
+
+h1 {
+  margin: 30px 20px;
+ color: black;
+  
+  border-bottom: solid;
+}
+p {
+  margin:20px;
+  font-size: 20px;
+  /* color:#ff6173;  */
+  color:black;
+}
+/* footer==========================================
+==================================================== */
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #263343;
+  padding: 8px 12px;
+  color: white;
+}
