@@ -1,9 +1,13 @@
 body {
-  background-image: url("../tkimg/background01.jpg");
+  
   margin: 0;
   /* background-color: rgb(250, 222, 227); */
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
+}
+
+body#home {
+  background-image: url("tkimg/background01.jpg");
 }
 
 a{  
