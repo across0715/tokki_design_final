@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>TokkiDesign</title>
+<html lang="en">
+    <title><%= yield(:title) %> | Tokki Design</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                               'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag    'application',
+                               'data-turbolinks-track': 'reload' %>
+  <meta charset="UTF-8">
+  <title>Tokki Design in Textile Industry</title>
+  <meta name="description" content="A Textile Degigner from Japan">
+  <meta name="description" content="Textile design","a skilled textile designer","translating Korean to Japanese">
+  <meta name="author" content="JY LEE">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tkstyle.css">
 
-  <body>
+   <%= favicon_link_tag('tkimg/favicon.ico') %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+ 
+</head>
+<body> 
+  <nav class="navbar">
+   <div class="navbar__logo">
+    <i class="fas fa-carrot"></i>
+    <a href="/">Tokki Design</a>
+   </div>
+
+     <ul class="navbar__menu">
+       <li><a href="/">Home</a></li>
+       <li><a href="/about">About </a></li>
+       <li><a href="/gallery">Gallery</a></li>
+       <li><a href="/faq">FAQ</a></li>
+     </ul>
+  
+   <ul class="navbar__icons">
+    <li><i class="fab fa-twitter"></i></li>
+    <li><i class="fab fa-facebook-f"></i></li>
+   </ul>
+  </nav>
+
+  
     <%= yield %>
   </body>
 </html>
