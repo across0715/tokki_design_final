@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get '/gallery',     to: 'static_pages#gallery'
   get '/faq',        to: 'static_pages#faq'
 
-  
+  get "posts/index", to: "posts#index"
   
 end
