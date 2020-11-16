@@ -7,44 +7,14 @@
                                'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag    'application',
                                'data-turbolinks-track': 'reload' %>
-  <meta charset="UTF-8">
-  <title>Tokki Design in Textile Industry</title>
-  <meta name="description" content="A Textile Degigner from Japan">
-  <meta name="description" content="Textile design","a skilled textile designer","translating Korean to Japanese">
-  <meta name="author" content="JY LEE">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="application.scss">
-
-   <%= favicon_link_tag('tkimg/favicon.ico') %>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-  
+   <%= render 'layouts/shim' %>
 </head>
-<body> 
-<!----------------------  header  -------------------------------------->
-  <header class="navbar">
-   <div class="navbar__logo">
-    <i class="fas fa-carrot"></i>
-    <a href="/">Tokki Design</a>
-   </div>
-
-     <ul class="navbar__menu">
-       <li><%= link_to "Home",   home_path %></li>
-       <li><%= link_to "About",  about_path %></li>
-       <li><%= link_to "Gallery",gallery_path%></li>
-       <li><%= link_to "FAQ",    faq_path%></li>
-     </ul>
-       
-   <ul class="navbar__icons">
-    <li><i class="fab fa-twitter"></i></li>
-    <li><i class="fab fa-facebook-f"></i></li>
-   </ul>
-  </header>
+<body>
+   <%= render 'layouts/header' %>
 
   
     <%= yield %>
-   <footer>&copy;Copy Right 2010 TOKKI DESIGN</footer>
+   <%= render 'layouts/footer' %>
   </body>
   
 </html>
