@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/faq',         to: 'static_pages#faq'
 
   get  '/signup',     to: 'users#new'
+  resources :users
   
 end
