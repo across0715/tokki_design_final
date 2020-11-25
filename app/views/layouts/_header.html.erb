@@ -9,7 +9,6 @@
        <li><%= link_to "About",     about_path , id: "logo_2"%></li>
        <li><%= link_to "Gallery",   gallery_path,id: "logo_2"%></li>
        <li><%= link_to "FAQ",       faq_path,    id: "logo_2"%></li>
-        <li><%= link_to "Sign up", signup_path,  id: "logo_2"%></li>
 
         <% if logged_in? %>
           <li><%= link_to "Users", '#',id: "logo_2"%></li>
@@ -29,11 +28,8 @@
         <% else %>
           <li><%= link_to "Log in", login_path ,id: "logo_2"%></li>
         <% end %>
+        <li><%= link_to "Sign up", signup_path,  id: "logo_2"%></li>
 
    </ul>
        
-   <ul class="navbar__icons">
-    <li><i class="fab fa-twitter"></i></li>
-    <li><i class="fab fa-facebook-f"></i></li>
-   </ul>
   </header>

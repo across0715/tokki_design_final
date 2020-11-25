@@ -123,10 +123,15 @@ p {
 .footer {
   width: 100%;
   height: 50px;
-  text-align: center;
+  
   background-color: #263343;
   padding: 8px 12px;
   color: white;
+}
+
+.navbar__icons{
+  text-align: center;
+  justify-content: center;
 }
 /* =======================================
 ======================== custom .scss ========================= */
