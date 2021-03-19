@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
-
   def home
+    @micropost = current_user.microposts.build if logged_in?
   end
 
   def about
@@ -8,8 +8,7 @@ class StaticPagesController < ApplicationController
 
   def gallery
   end
-  
+
   def faq
   end
-
 end
