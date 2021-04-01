@@ -9,7 +9,7 @@ Rails.application.configure do
 
   config.assets.compile = false
 
-  config.active_storage.service = :local
+  #config.active_storage.service = :local
 
   config.force_ssl = true
 
