@@ -8,7 +8,7 @@ local:
 
 amazon:
   service: S3
-  access_key_id: <%= ENV['AKIAX4AEDLC2O3Y475JN'] %>
-  secret_access_key: <%= ENV['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'] %>
-  region: <%= ENV['region=ap-northeast-1'] %>
-  bucket: <%= ENV['tokki-design'] %>
+  access_key_id: <%= ENV['ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['SECRET_ACCESS_KEY '] %>
+  region: <%= ENV['REGION'] %>
+  bucket: <%= ENV['BUCKET'] %>
