@@ -17,7 +17,7 @@ Rails.application.configure do
 
   config.log_tags = [:request_id]
 
-  config.active_storage.service = :amazon
+  config.active_storage.service = :local
 
   config.action_mailer.perform_caching = false
 
