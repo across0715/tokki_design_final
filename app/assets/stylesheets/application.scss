@@ -1,13 +1,27 @@
+@import 'about';
+@import 'gallery';
+@import 'f&Q';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
 body {
   margin: 0;
   width: auto;
   text-align: center;
 }
+
+.container {
+}
+
 .statics_container {
-  background-color: rgb(250, 222, 227);
+  margin-top: 25px;
+  background-color: rgb(249, 236, 238);
+
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
-  height: 800px;
+  height: 700px;
+}
+.title {
+  font-size: 25px;
 }
 
 body#home {
