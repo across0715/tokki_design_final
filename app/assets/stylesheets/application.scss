@@ -1,9 +1,7 @@
 body {
-  
   margin: 0;
   width: auto;
   text-align: center;
-  
 }
 .statics_container {
   background-color: rgb(250, 222, 227);
@@ -13,26 +11,25 @@ body {
 }
 
 body#home {
-  background-image: image-url("tkimg/background01.jpg");
+  background-image: image-url('tkimg/background01.jpg');
 }
 
-a{  
+a {
   text-decoration: none;
- color: white; 
- 
+  color: white;
 }
 
 .navbar {
-  display:  flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #263343;
   padding: 8px 12px;
-} 
+}
 
 .navbar__logo {
   font-size: 24px;
-  color:silver;
+  color: silver;
 }
 
 .navbar__logo i {
@@ -43,9 +40,9 @@ a{
   display: flex;
   list-style: none;
   padding-left: 0;
-} 
+}
 
-.navbar__menu li{
+.navbar__menu li {
   padding: 8px 12px;
 }
 
@@ -59,32 +56,30 @@ a{
   color: white;
   display: flex;
   padding-left: 0;
-  
 }
 
 .navbar__icons li {
   padding: 8px 12px;
 }
 
-
-@media  screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 24px;
   }
 
-  .navbar__menu  {
+  .navbar__menu {
     flex-direction: column;
     align-items: center;
     width: 100%;
-  } 
+  }
   .navbar__menu li {
-   width: 100%;
-   text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
-  .navbar__icons  {
+  .navbar__icons {
     justify-content: center;
     width: 100%;
   }
@@ -93,29 +88,27 @@ a{
 ================================================*/
 
 .main {
-  display:flex;
+  display: flex;
 }
 
 .left {
-  background-color: none; 
+  background-color: none;
   width: 750px;
   height: 700px;
   margin: 30px;
-} 
-
-
+}
 
 h1 {
   margin: 30px 20px;
   color: black;
-  
+
   /* border-bottom: solid;*/
 }
 p {
-  margin:20px;
+  margin: 20px;
   font-size: 20px;
   /* color:#ff6173;  */
-  color:black;
+  color: black;
 }
 /* footer==========================================
 ==================================================== */
@@ -129,10 +122,9 @@ p {
   color: white;
 }
 
-.navbar__icons{
+.navbar__icons {
   text-align: center;
   justify-content: center;
 }
 /* =======================================
 ======================== custom .scss ========================= */
-
