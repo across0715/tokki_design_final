@@ -4,6 +4,9 @@
       <section class="user_info">
         <%= render 'shared/user_info' %>
       </section>
+      <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
       <section class="micropost_form">
         <%= render 'shared/micropost_form' %>
       </section>
@@ -14,32 +17,26 @@
     </div>
   </div>
 <% else %>
-   <body id = "home">
-<!-- main contents -->
-<div class="main">
- 
-  <div class ="left">
-    <!-- <h1>A Textile Designer JISOO from Tokyo</h1> -->
-    <!-- <p>Here is Ji-soo Kim's portfolio site.<br>She works as a textile freelance designer. <br> -->
-      <!-- This web page mainly introduces her career and achievements so far.  <br> -->
-      <!-- As a web designer, based on living in Japan for over 20 years,  <br> -->
-      <!-- she is also involved in Korean to Japanese translation activities.</p> -->
-
-  </div>
-
-  <div class ="right">
-    <h1>A Textile Designer JISOO from Tokyo</h1>
-    <p>Here is Ji-soo Kim's portfolio site.<br>She works as a textile freelance designer. <br>
-      This web page mainly introduces her career and achievements so far.  <br>
-    <!-- <img src= "tkimg/tk0002.jpg" alt="a woman wears a printing one piece"width="450px" height= "700px"> -->
-
-</div>
-</div>
-<!-- ============================footer
+  <body id = "home">
+    <!-- main contents -->
+    <div class="main">
+      <div class ="left">
+        <!-- <h1>A Textile Designer JISOO from Tokyo</h1> -->
+        <!-- <p>Here is Ji-soo Kim's portfolio site.<br>She works as a textile freelance designer. <br> -->
+        <!-- This web page mainly introduces her career and achievements so far.  <br> -->
+        <!-- As a web designer, based on living in Japan for over 20 years,  <br> -->
+        <!-- she is also involved in Korean to Japanese translation activities.</p> -->
+      </div>
+      <div class ="right">
+        <h1>A Textile Designer JISOO from Tokyo</h1>
+        <p>Here is Ji-soo Kim's portfolio site.<br>
+          She works as a textile freelance designer. <br>
+          This web page mainly introduces her career and achievements so far.  <br>
+          <!-- <img src= "tkimg/tk0002.jpg" alt="a woman wears a printing one piece"width="450px" height= "700px"> -->
+        </div>
+      </div>
+      <!-- ============================footer
 ======================================================= -->
-
-
-  
-</body>
-</html>
+    </body>
+  </html>
 <% end %>
