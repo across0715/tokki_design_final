@@ -9,6 +9,12 @@ body {
   text-align: center;
 }
 
+.intro {
+  margin-left: 300px;
+  margin-top: 100px;
+  color: red;
+}
+
 .container {
 }
 
@@ -103,13 +109,6 @@ a {
 
 .main {
   display: flex;
-}
-
-.left {
-  background-color: none;
-  width: 750px;
-  height: 700px;
-  margin: 30px;
 }
 
 h1 {
