@@ -3,6 +3,11 @@
   text-align: center;
   max-width: 1200px;
 }
+
+.section_container {
+  max-width: 1200px;
+}
+
 .about_majors {
   display: flex;
   justify-content: space-between;
@@ -55,4 +60,29 @@
 }
 .job_period {
   font-size: 13px;
+}
+//skill//
+
+#skill {
+  background-color: #fcfacc;
+}
+.skillset {
+  display: flex;
+  background-color: darkgrey;
+  color: rgb(235, 235, 235);
+}
+.skillset_left {
+  flex-basis: 60%;
+  background-color: rgb(108, 107, 107);
+}
+.skillset_right {
+  flex-basis: 40%;
+  background-color: rgb(213, 209, 209);
+}
+.tools {
+  background-color: grey;
+}
+.skill_description {
+  display: flex;
+  margin-right: 400px;
 }
