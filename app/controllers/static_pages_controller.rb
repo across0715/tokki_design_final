@@ -12,6 +12,9 @@ class StaticPagesController < ApplicationController
   def gallery
   end
 
+  def designs_detail
+  end
+
   def faq
   end
 end
