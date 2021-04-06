@@ -62,6 +62,9 @@
   font-size: 13px;
 }
 //skill//
+ul {
+  list-style: none;
+}
 
 #skill {
   background-color: #fcfacc;
@@ -101,4 +104,45 @@
 .skill_value {
   height: 3px;
   background-color: orange;
+}
+
+//testimonial
+
+#testimonials {
+  background-color: rgb(238, 238, 238);
+}
+.testimonials {
+  margin: 40px;
+}
+.testimonial {
+  display: flex;
+  margin: 32px 0;
+}
+.testimonial_avartar {
+  border-radius: 50%;
+}
+.testimonial_avartar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial_avartar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial_speech_bubble {
+  padding: 18px;
+  background-color: white;
+  border-radius: 50px;
+}
+.referral {
+  display: flex;
+  margin-left: 50%;
+}
+
+.testimonial_speech_bubble p {
+  color: rgb(155, 154, 154);
+}
+
+.testimonial_speech_bubble a {
+  color: pink;
 }

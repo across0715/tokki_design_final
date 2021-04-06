@@ -75,16 +75,19 @@ p {
 /* header */
 .navbar__menu {
   color: white;
+  padding-top: 20px;
+}
+.logo_set {
+  display: flex;
 }
 
 #logo {
   float: left;
-  margin-right: 10px;
-  font-size: 24px;
+  //margin-right: 10px;
+  font-size: 20px;
   color: white;
-  text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 20px;
   font-weight: bold;
   &:hover {
     color: white;

@@ -40,11 +40,14 @@ a {
 }
 
 .navbar {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #263343;
+  //background-color: #263343;
   padding: 8px 12px;
+  background: /*image-url('tkimg/tokki_icon_white_s.png') no-repeat center*/ #263343;
+  background-size: 90px;
 }
 
 .navbar__logo {
