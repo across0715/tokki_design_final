@@ -318,3 +318,32 @@ span.image {
     border: 0;
   }
 }
+// customise=====================================================//
+.btn {
+  margin-bottom: 30px;
+  background-color: #ff857a;
+  border-style: none;
+}
+.btn:hover {
+  background-color: rgb(138, 159, 143);
+}
+.dropdown > a {
+  text-decoration: none;
+  color: white;
+}
+li > a {
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: rgb(138, 159, 143);
+  color: white;
+}
+h1,
+h2,
+h3 {
+  color: rgb(85, 85, 85);
+}
+#intro_title {
+  color: red;
+}
