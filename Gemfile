@@ -22,9 +22,12 @@ gem 'dotenv-rails'
 
 gem 'mimemagic', '~> 0.3.10'
 
+gem 'ransack'
+
 group :development, :test do
   gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :development do

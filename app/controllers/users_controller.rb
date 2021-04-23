@@ -4,8 +4,12 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
+  PER_PAGE = 20
+
   def index
-    @users = User.paginate(page: params[:page])
+    @q = User.ransack(params[:q])
+    @users = @q.result.paginate(page: params[:page])
+    # @users = User.paginate(page: params[:page]) #written before inseting ransack
   end
 
   def show
