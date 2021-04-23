@@ -75,16 +75,19 @@ p {
 /* header */
 .navbar__menu {
   color: white;
+  padding-top: 20px;
+}
+.logo_set {
+  display: flex;
 }
 
 #logo {
   float: left;
-  margin-right: 10px;
-  font-size: 24px;
+  //margin-right: 10px;
+  font-size: 20px;
   color: white;
-  text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 20px;
   font-weight: bold;
   &:hover {
     color: white;
@@ -314,4 +317,33 @@ span.image {
   input {
     border: 0;
   }
+}
+// customise=====================================================//
+.btn {
+  margin-bottom: 30px;
+  background-color: #ff857a;
+  border-style: none;
+}
+.btn:hover {
+  background-color: rgb(138, 159, 143);
+}
+.dropdown > a {
+  text-decoration: none;
+  color: white;
+}
+#account {
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: rgb(138, 159, 143);
+  color: white;
+}
+h1,
+h2,
+h3 {
+  color: rgb(85, 85, 85);
+}
+#intro_title {
+  color: red;
 }

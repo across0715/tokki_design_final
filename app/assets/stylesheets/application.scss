@@ -1,6 +1,6 @@
 @import 'about';
 @import 'gallery';
-@import 'f&Q';
+@import 'faq';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
 body {
@@ -21,10 +21,12 @@ body {
 .statics_container {
   margin-top: 25px;
   background-color: rgb(249, 236, 238);
+  width: 100%;
+  height: 900px;
+
+  margin-bottom: 100px;
 
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 500;
-  height: 700px;
 }
 .title {
   font-size: 25px;
@@ -40,11 +42,14 @@ a {
 }
 
 .navbar {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #263343;
+
   padding: 8px 12px;
+  background: /*image-url('tkimg/tokki_icon_white_s.png') no-repeat center*/ #fcc5c0;
+  background-size: 90px;
 }
 
 .navbar__logo {
@@ -67,7 +72,7 @@ a {
 }
 
 .navbar__menu li:hover {
-  background-color: #d49466;
+  background-color: rgb(138, 159, 143);
   border-radius: 4px;
 }
 
@@ -130,7 +135,7 @@ p {
   width: 100%;
   height: 50px;
   margin-top: 45px;
-  background-color: #263343;
+  background-color: #fcc5c0;
   padding: 8px 12px;
   color: white;
 }
