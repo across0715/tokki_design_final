@@ -95,7 +95,7 @@ p {
   }
 }
 #logo_2 {
-  color: white;
+  color: #db7093;
   text-decoration: none;
 }
 
@@ -344,6 +344,25 @@ h2,
 h3 {
   color: rgb(85, 85, 85);
 }
+.main {
+  position: relative;
+}
+
 #intro_title {
-  color: red;
+  position: absolute;
+  top: 180px;
+  right: 100px;
+  margin-right: 50px;
+  color: white;
+  font-family: 'Italianno', cursive;
+  font-size: 70px;
+}
+#intro_title_1 {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  margin-right: 50px;
+  color: white;
+  font-family: 'Italianno', cursive;
+  font-size: 70px;
 }
