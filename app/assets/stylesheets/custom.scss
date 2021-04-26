@@ -94,6 +94,14 @@ p {
     text-decoration: none;
   }
 }
+.navbar__menu li #logo_2 {
+  display: block;
+  padding: 8px 12px;
+
+  &:hover {
+    color: white;
+  }
+}
 #logo_2 {
   color: #db7093;
   text-decoration: none;
@@ -321,22 +329,26 @@ span.image {
 // customise=====================================================//
 .btn {
   margin-bottom: 30px;
-  background-color: #ff857a;
+  background-color: #db7093;
   border-style: none;
 }
 .btn:hover {
-  background-color: rgb(138, 159, 143);
+  background-color: rgb(180, 199, 185);
 }
 .dropdown > a {
   text-decoration: none;
-  color: white;
+  color: #db7093;
 }
 #account {
-  color: white;
+  color: #db7093;
+}
+.dropdown-menu > li > a {
+  color: #db7093;
+  font-size: 25px;
 }
 
 .dropdown-menu > li > a:hover {
-  background-color: rgb(138, 159, 143);
+  background-color: rgb(180, 199, 185);
   color: white;
 }
 h1,

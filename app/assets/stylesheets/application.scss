@@ -63,19 +63,14 @@ a {
   padding-left: 0;
 }
 
-#logo_2:hover {
-  color: white;
-}
-#logo_2 {
-  display: block;
-}
-// li a {
+// .navbar__menu li a {
 //   display: block;
-// }
-.navbar__menu li {
-  padding: 8px 12px;
-}
+//   padding: 8px 12px;
 
+//   &:hover {
+//     color: white !important;
+//   }
+// }
 .navbar__menu li:hover {
   background-color: rgb(180, 199, 185);
   border-radius: 4px;
