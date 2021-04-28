@@ -17,8 +17,8 @@ body {
   width: auto;
 
   /* background-color: rgb(250, 222, 227); */
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 500;
+
+  font-family: 'Smythe', cursive;
   position: relative;
   min-height: 100vh;
   padding-bottom: 50px; /* フッターの高さに合わせる */
@@ -284,6 +284,7 @@ input {
 .pagination li a {
   color: grey;
 }
+
 .active > a {
   background-color: hotpink;
 }
