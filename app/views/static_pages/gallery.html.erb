@@ -2,79 +2,22 @@
 <section id="work">
   <h1>Designs </h1>
   <div class="work_1">
-    <div class="work_projects">
-      <div class = "trimming">
-        <div class = "inner_trimm">
-          <%= image_tag 'details/f_1.jpg' %>
+    <% 1.upto(8) do |i| %>
+      <% index = i.to_s.rjust(4, "0") %>
+      <div class="work_projects">
+        <div class="trimming">
+          <div class="inner_trimm">
+            <%= image_tag "details/#{index}.jpg" %>
+          </div>
+        </div>
+        <div class="text">TOKKI-DESIGN</div>
+        <div class="projects_discription">
+          <div class="design_number"><%= index %> </div>
+          <button class="button" >
+            <%= link_to "more details","/gallery/#{index}", target: :_blank , class: "bigger"%>
+          </button>
         </div>
       </div>
-      <div class="text">TOKKI-DESIGN</div>
-      <div class="projects_discription">
-        <div class= "design_number">D- F001 </div>
-        <button class= "button " ><%= link_to "more details", designs_detail_path,target: :_blank , class: "bigger"%></button>
-      </div>
-    </div>
-    <div class="work_projects">
-      <div class = "trimming">
-        <div class = "inner_trimm">
-          <%= image_tag 'details/f_2.jpg' %>
-        </div>
-      </div>
-      <div class="text">TOKKI-DESIGN</div>
-      <div class="projects_discription">
-        <div class= "design_number">D- F002 </div>
-        <button class= "button " ><%= link_to "more details", designs_detail_path,target: :_blank , class: "bigger"%></button>
-      </div>
-    </div>
-    <div class="work_projects">
-      <div class = "trimming">
-        <div class = "inner_trimm">
-          <%= image_tag 'details/f_4.jpg' %>
-        </div>
-      </div>
-      <div class="text">TOKKI-DESIGN</div>
-      <div class="projects_discription">
-        <div class= "design_number">D- F003 </div>
-        <button class= " button" ><%= link_to "more details", designs_detail_path,target: :_blank , class: "bigger"%></button>
-      </div>
-    </div>
-  </div>
-  <div class="work_1">
-    <div class="work_projects">
-      <div class = "trimming">
-        <div class = "inner_trimm">
-          <%= image_tag 'details/p_1.jpg' %>
-        </div>
-      </div>
-      <div class="text">TOKKI-DESIGN</div>
-      <div class="projects_discription">
-        <div class= "design_number">D- F004 </div>
-        <button class= "button " ><%= link_to "more details", designs_detail_path,target: :_blank , class: "bigger"%></button>
-      </div>
-    </div>
-    <div class="work_projects">
-      <div class = "trimming">
-        <div class = "inner_trimm">
-          <%= image_tag 'details/p_2_black.jpg' %>
-        </div>
-      </div>
-      <div class="text">TOKKI-DESIGN</div>
-      <div class="projects_discription">
-        <div class= "design_number">D- F005 </div>
-        <button class= " button" ><%= link_to "more details", designs_detail_path,target: :_blank , class: "bigger"%></button>
-      </div>
-    </div>
-    <div class="work_projects">
-      <div class = "trimming">
-        <div class = "inner_trimm">
-          <%= image_tag 'details/p_3.jpg' %>
-        </div>
-      </div>
-      <div class="text">TOKKI-DESIGN</div>
-      <div class="projects_discription">
-        <div class= "design_number">D- F006 </div>
-        <button class= " button" ><%= link_to "more details", designs_detail_path,target: :_blank , class: "bigger"%></button>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>

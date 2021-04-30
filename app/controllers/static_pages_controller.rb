@@ -13,6 +13,7 @@ class StaticPagesController < ApplicationController
   end
 
   def designs_detail
+    @index = params[:id]
   end
 
   def faq

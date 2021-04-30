@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "/home", to: "static_pages#home"
   get "/about", to: "static_pages#about"
   get "/gallery", to: "static_pages#gallery"
-  get "/designs_detail", to: "static_pages#designs_detail"
+  get "/gallery/:id", to: "static_pages#designs_detail"
   get "/faq", to: "static_pages#faq"
 
   get "/signup", to: "users#new"
