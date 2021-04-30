@@ -6,6 +6,14 @@ User.create!(name: "tokki",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
+
+User.create!(name: "JY LEE",
+             email: "test@gmail.com",
+             password: "password",
+             password_confirmation: "password",
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
 # 追加のユーザーをまとめて生成する
 15.times do |n|
   name = Faker::Name.name
