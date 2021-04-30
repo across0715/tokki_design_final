@@ -3,10 +3,10 @@
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
+      <div class= "show_img_box">
+        <div id= "show_img"><%= image_tag @user.display_image if @user.image.attached? %></div>
+        <div id= "show_img_name"><%= @user.name %></div>
+      </div>
     </section>
     <section class="stats">
       <%= render 'shared/stats' %>
