@@ -1,6 +1,6 @@
 # メインのサンプルユーザーを1人作成する
 User.create!(name: "tokki",
-             email: "j.soo7372@gmail.com",
+             email: "tokki@gmail.com",
              password: "password",
              password_confirmation: "password",
              admin: true,
