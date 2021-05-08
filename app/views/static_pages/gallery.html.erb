@@ -5,18 +5,14 @@
     <% 1.upto(8) do |i| %>
       <% index = i.to_s.rjust(4, "0") %>
       <div class="work_projects">
-        <div class="trimming">
-          <div class="inner_trimm">
-            <%= image_tag "details/#{index}.jpg" %>
-          </div>
+        <div class="inner_trimm">
+          <%= image_tag "details/#{index}.jpg" %>
         </div>
         <div class="text">TOKKI-DESIGN</div>
-        <div class="projects_discription">
-          <div class="design_number"><%= index %> </div>
-          <button class="button" >
-            <%= link_to "more details","/gallery/#{index}", target: :_blank , class: "bigger"%>
-          </button>
-        </div>
+        <div class="design_number"><%= index %> </div>
+        <button class="button" >
+          <%= link_to "more details","/gallery/#{index}", target: :_blank , class: "bigger"%>
+        </button>
       </div>
     <% end %>
   </div>
