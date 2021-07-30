@@ -1,4 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "noreply@example.com"
-  layout 'mailer'
+  # 送信元として表示するメールアドレスと表示名
+  default from: "tokkidesign お問い合わせ <tokki2design@gmail.com>"
+  layout "mailer"
 end
