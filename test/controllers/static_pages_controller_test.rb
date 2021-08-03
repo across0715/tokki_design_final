@@ -1,7 +1,6 @@
-require 'test_helper'
+require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-
   def setup
     @base_title = "Tokki Design"
   end
@@ -27,7 +26,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get faq" do
     get faq_url
     assert_response :success
-    assert_select "title", "FAQ | #{@base_title}"
+    assert_select "title", "faq | #{@base_title}"
   end
-
 end
