@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/gallery", to: "static_pages#gallery"
   get "/gallery/:id", to: "static_pages#designs_detail"
   get "/faq", to: "static_pages#faq"
+  get "/contacts", to: "static_pages#contacts"
 
   get "/signup", to: "users#new"
 
@@ -26,5 +27,4 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
-  resources :contacts
 end
