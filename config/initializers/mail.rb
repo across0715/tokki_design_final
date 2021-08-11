@@ -1,6 +1,6 @@
 if Rails.env.production?
   # 各自のドメインに置き換えること
-  host = "Herokuのサブドメイン.herokuapp.com"
+  host = "tokkidesign.herokuapp.com"
   # メール配信に失敗した場合にエラーを発生
   ActionMailer::Base.raise_delivery_errors = true
   ActionMailer::Base.delivery_method = :smtp
