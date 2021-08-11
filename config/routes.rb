@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/gallery", to: "static_pages#gallery"
   get "/gallery/:id", to: "static_pages#designs_detail"
   get "/faq", to: "static_pages#faq"
+  get "/contacts", to: "static_pages#contacts"
 
   get "/signup", to: "users#new"
 
