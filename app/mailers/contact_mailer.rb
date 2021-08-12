@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  ADMIN_EMAIL = "tokki2tokki@gmail.com"
+  ADMIN_EMAIL = "tokki2design@gmail.com"
 
   def user_email(contact)
     @contact = contact

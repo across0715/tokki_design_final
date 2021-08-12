@@ -4,7 +4,7 @@ class CreateContacts < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :email
       t.text :content
-      t.inet :remote_ip
+      t.string :remote_ip
 
       t.timestamps
     end

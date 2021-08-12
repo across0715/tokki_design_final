@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   get "password_resets/new"
   get "password_resets/edit"
   get "sessions/new"
+
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   root to: "static_pages#home"
+
   get "/home", to: "static_pages#home"
   get "/about", to: "static_pages#about"
   get "/gallery", to: "static_pages#gallery"
