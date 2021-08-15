@@ -5,13 +5,14 @@ Rails.application.routes.draw do
 
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   root to: "static_pages#home"
+  resources :contacts, only: %i[index create]
 
   get "/home", to: "static_pages#home"
   get "/about", to: "static_pages#about"
   get "/gallery", to: "static_pages#gallery"
   get "/gallery/:id", to: "static_pages#designs_detail"
   get "/faq", to: "static_pages#faq"
-  get "/contacts", to: "static_pages#contacts"
+  # get "/contacts", to: "static_pages#contacts"
 
   get "/signup", to: "users#new"
 

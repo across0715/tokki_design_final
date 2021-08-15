@@ -12,8 +12,8 @@ class StaticPagesController < ApplicationController
   def gallery
   end
 
-  def contacts
-  end
+  #def contacts
+  #end
 
   def designs_detail
     @index = params[:id]
