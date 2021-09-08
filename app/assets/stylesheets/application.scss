@@ -11,6 +11,9 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .statics_container {
@@ -89,6 +92,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .navbar {
+    //background-color: aqua;
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 24px;
@@ -137,6 +141,7 @@ p {
   margin-top: 45px;
   background-color: #f2f1ef;
   padding: 8px 12px;
+  margin-top: auto;
 }
 
 .navbar__icons {
