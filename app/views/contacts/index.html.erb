@@ -1,6 +1,19 @@
-<h1>Contacts</h1>
+<!-- ***** 以下を修正 ***** -->
+<h1>Inquiries<%= " 《Confirmation》" if @contact.submitted == "1" %></h1>
+<!-- ***** 以上を修正 ***** -->
 <%= form_with model: @contact, local: true do |form| %>
   <%= render "error_messages", form: form %>
-  <%= render "submit_fields", form: form %>
-  <%= form.submit "submit" %>
+  <!-- ***** 以下を修正 ***** -->
+  <%= form.hidden_field :submitted %>
+  <% if @contact.submitted == "1" %>
+    <%# confirmation screen %>
+    <%= render "confirm_fields", form: form %>
+    <%= form.button "to return", name: "contact[confirmed]", value: "" %>
+    <%= form.button "submit", name: "contact[confirmed]", value: "1" %>
+  <% else %>
+    <%# contribution screen %>
+    <%= render "submit_fields", form: form %>
+    <%= form.submit "Confirmation" %>
+  <% end %>
+  <!-- ***** 以上を修正 ***** -->
 <% end %>
