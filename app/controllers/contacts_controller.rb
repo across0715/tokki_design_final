@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   def index
     @contact = Contact.new
-  end
+  endp
 
   def create
     @contact = Contact.new(contact_params)
@@ -9,6 +9,7 @@ class ContactsController < ApplicationController
       ContactMailer.user_email(@contact).deliver_now
 
       ContactMailer.admin_email(@contact).deliver_now
+      flash[:danger] = "Your message has been sent."
       redirect_to root_path
     else
       render :index
